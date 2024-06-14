@@ -1,5 +1,5 @@
 import data from '../../../logements.json';
-import './Card.scss';
+import './Card.sass';
 
 function Card() {
   const truncateTitle = (title) => {
