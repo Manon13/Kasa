@@ -6,12 +6,12 @@ function Header() {
     <header className="header">
       <img src={Logo} alt="Logo" />
       <nav className="nav">
-        <ul className="nav-list">
-          <li className="nav-item">
-            <a href="/" className="nav-link">Accueil</a>
+        <ul className="nav__list">
+          <li className="nav__item">
+            <a href="/" className="nav__link">Accueil</a>
           </li>
-          <li className="nav-item">
-            <a href="/about" className="nav-link">A propos</a>
+          <li className="nav__item">
+            <a href="/about" className="nav__link">A propos</a>
           </li>
         </ul>
       </nav>

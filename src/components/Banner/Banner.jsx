@@ -3,7 +3,7 @@ import './Banner.sass';
 function Banner () {
     return (
         <div className="banner">      
-            <p className='banner_text'>Chez vous, partout et ailleurs</p>
+            <p className='banner__text'>Chez vous, partout et ailleurs</p>
         </div>
     );
 }

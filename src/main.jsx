@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
 import Card from "./components/Card/Card";
+import Footer from "./components/Footer/Footer";
+import './main.sass'
 // import Root from "./routes/Root";
 // import ErrorPage from "./pages/Error/index";
 // import "./index.css";
@@ -21,6 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Header />
     <Banner />
     <Card />
+    <Footer />
     <RouterProvider router={router} />
   </React.StrictMode>
 );
