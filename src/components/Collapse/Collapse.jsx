@@ -1,4 +1,4 @@
-import data from "../../../a_propos.json";
+import data from "../../../about.json";
 import "./Collapse.sass";
 
 function Collapse() {
