@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import "./Card.sass";
+import PropTypes from 'prop-types'
+import './Card.sass'
 
 // Composant Card
 function Card({ logement }) {
@@ -8,7 +8,7 @@ function Card({ logement }) {
       <img src={logement.cover} alt={logement.title} />
       <h2 className="card__title ">{logement.title}</h2>
     </div>
-  );
+  )
 }
 
 Card.propTypes = {
@@ -17,6 +17,6 @@ Card.propTypes = {
     cover: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,
-};
+}
 
-export default Card;
+export default Card

@@ -1,13 +1,49 @@
+// Collapse.sass
 .collapse
+  width: 1000px
   display: flex
   flex-direction: column
+  justify-content: center
+  margin: 0 auto
+
+.collapse__item
+  border-radius: 5px
+  // overflow: hidden
+
+.collapse__item:not(:first-child)
+  margin-top: 30px
+
+.collapse__title
+  display: flex
+  justify-content: space-between
   align-items: center
+  font-family: 'Montserrat'
+  font-size: 24px
+  font-weight: 700
+  margin: 0px
+  padding: 10px 20px 10px 15px
+  color: #fff
+  background-color: #FF6060
+  border-radius: 5px
 
-  .collapse__item
-    margin-top: 30px
+.collapse__icon
+  margin-left: 10px
+  cursor: pointer
 
-    .collapse__title
-      width: 1023px
-    // background-color: #FF6060
-      padding: 10px 20px 10px 15px
-      border-radius: 5px
+.collapse__description
+  max-height: 0
+  font-family: 'Montserrat'
+  font-size: 16px
+  overflow: hidden
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out
+  background-color: #fbfbfb
+  border-radius: 5px
+  padding: 0 10px
+
+  &.open
+    max-height: 100px
+    padding: 10px
+
+.collapse__description p
+  overflow-wrap: break-word
+  margin: 0
