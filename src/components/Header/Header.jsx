@@ -5,7 +5,9 @@ import './Header.sass'
 function Header() {
   return (
     <header className="header">
-      <img src={Logo} alt="Logo" />
+      <Link to="/">
+        <img src={Logo} alt="Logo" />
+      </Link>
       <nav className="nav">
         <ul className="nav__list">
           <li className="nav__item">

@@ -7,8 +7,8 @@ import '../components/Collapse/Collapse.sass'
 function About() {
   return (
     <>
-      <Banner img={BannerImage} text=" " />
-      <div className="collapse">
+      <Banner img={BannerImage} text=' ' />
+      <div className='collapse'>
         {data.map((item) => (
           <Collapse key={item.id} item={item} />
         ))}

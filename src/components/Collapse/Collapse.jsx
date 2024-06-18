@@ -12,8 +12,8 @@ function Collapse({ item }) {
   };
 
   return (
-    <div className="collapse__item">
-      <h2 className="collapse__title" >
+    <div className='collapse__item'>
+      <h2 className='collapse__title' >
         {item.title}
         <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown}
         className='collapse__icon' onClick={toggleCollapse}/>
