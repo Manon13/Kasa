@@ -1,0 +1,61 @@
+.carousel
+  position: relative
+  width: 100%
+  max-width: 1240px
+  height: 400px
+  margin: auto
+  margin-top: 50px
+  overflow: hidden
+  border-radius: 25px
+
+  &__content
+    display: flex
+    transition: transform 0.5s ease-in-out
+    width: 100%
+
+  &__item
+    min-width: 100%
+    box-sizing: border-box
+    display: none
+
+    &.active
+      display: block
+
+    img
+      width: 100%
+      height: auto
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+
+  &__button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    background-color: rgba(0, 0, 0, 0.0)
+    border: none
+    color: white
+    padding: 10px
+    cursor: pointer
+    z-index: 1
+
+    &--left
+      left: 10px
+
+    &--right
+      right: 10px
+
+    .faChevronRight, .faChevronLeft
+      font-size: 20px
+      height: 80px
+
+.carousel__pagination
+  position: absolute
+  bottom: 10px
+  left: 50%
+  transform: translateX(-50%)
+  display: flex
+  justify-content: center
+  align-items: center
+ 
