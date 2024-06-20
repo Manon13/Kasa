@@ -9,7 +9,7 @@ function Home() {
       <Banner img={BannerImage} text="Chez vous, partout et ailleurs" />
       <div className="card__container">
         {data.map((logement) => (
-          <Card key={logement.id} logement={logement} />
+          <Card key={logement.id} item={logement} />
         ))}
       </div>
     </>

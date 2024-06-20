@@ -1,14 +1,36 @@
 import { useParams } from 'react-router-dom'
 import data from '../data/logements.json'
 import Carousel from '../components/Carousel/Carousel'
-import '../components/Logement/Logement.sass'
+import Collapse from '../components/Collapse/Collapse'
+import ErrorBoundary from '../components/Error/ErrorBoundary'
+import Tag from '../components/Tag/Tag'
+import Profil from '../components/Profil/Profil'
+import '../index.sass'
 
 function Logement() {
   const { id } = useParams()
   const logement = data.find((item) => item.id === id)
 
   if (!logement) {
-    return <div>Logement introuvable.</div>
+    return <ErrorBoundary />
+  }
+
+  const descriptionItem = {
+    id: `${logement.id}-description`,
+    title: 'Description',
+    description: logement.description,
+  }
+
+  const equipmentsItem = {
+    id: `${logement.id}-equipments`,
+    title: 'Équipements',
+    description: (
+      <ul>
+        {logement.equipments.map((equipment, index) => (
+          <li key={index}>{equipment}</li>
+        ))}
+      </ul>
+    ),
   }
 
   return (
@@ -22,7 +44,28 @@ function Logement() {
           />
         ))}
       />
-      <h1>{logement.title}</h1>
+      <div className="logement">
+        <div>
+          <h1 className="logement__title">{logement.title}</h1>
+          <p className="logement__location">{logement.location}</p>
+          <div className="tags-container">
+            {logement.tags.map((tag, index) => (
+              <Tag key={index} tag={tag} />
+            ))}
+          </div>
+        </div>
+        <div>
+          <Profil host={logement.host} />
+        </div>
+        <div className="divCollapse">
+          <div className="divItemCollapse">
+            <Collapse item={descriptionItem} className="divCollapse__item" />
+          </div>
+          <div className="divItemCollapse">
+            <Collapse item={equipmentsItem} className="divCollapse__item" />
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

@@ -8,10 +8,7 @@
 
 .collapse__item
   border-radius: 5px
-  // overflow: hidden
-
-.collapse__item:not(:first-child)
-  margin-top: 30px
+  margin-bottom: 30px
 
 .collapse__title
   display: flex
@@ -33,7 +30,7 @@
 .collapse__description
   max-height: 0
   font-family: 'Montserrat'
-  font-size: 16px
+  font-size: 18px
   overflow: hidden
   transition: max-height 0.3s ease-out, padding 0.3s ease-out
   background-color: #fbfbfb
@@ -41,9 +38,17 @@
   padding: 0 10px
 
   &.open
-    max-height: 100px
-    padding: 10px
+    max-height: 150px
+    padding: 20px
 
 .collapse__description p
   overflow-wrap: break-word
   margin: 0
+  padding: 0px
+
+.collapse__description ul
+  margin: 0px
+  padding: 0px
+
+.collapse__description li
+  list-style-type: none

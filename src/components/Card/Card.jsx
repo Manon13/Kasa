@@ -3,17 +3,17 @@ import PropTypes from 'prop-types'
 import './Card.sass'
 
 // Composant Card
-function Card({ logement }) {
+function Card({ item }) {
   return (
-    <Link to={`/logement/${logement.id}`}className="card">
-      <img src={logement.cover} alt={logement.title} />
-      <h2 className="card__title ">{logement.title}</h2>
+    <Link to={`/logement/${item.id}`}className="card">
+      <img src={item.cover} alt={item.title} />
+      <h2 className="card__title ">{item.title}</h2>
     </Link>
   )
 }
 
 Card.propTypes = {
-  logement: PropTypes.shape({
+  item: PropTypes.shape({
     id: PropTypes.string.isRequired,
     cover: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
