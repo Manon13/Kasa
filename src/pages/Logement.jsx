@@ -5,6 +5,7 @@ import Collapse from '../components/Collapse/Collapse'
 import ErrorBoundary from '../components/Error/ErrorBoundary'
 import Tag from '../components/Tag/Tag'
 import Profile from '../components/Profile/Profile'
+import Rating from '../components/Rating/Rating'
 import '../index.sass'
 
 function Logement() {
@@ -57,6 +58,7 @@ function Logement() {
           </div>
           <div className='div-profile'>
             <Profile host={logement.host} />
+            <Rating rating={parseInt(logement.rating, 10)} />
           </div>
         </div>
         <div className='divCollapse'>
