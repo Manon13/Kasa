@@ -4,19 +4,19 @@ import './Header.sass'
 
 function Header() {
   return (
-    <header className="header">
-      <Link to="/">
-        <img src={Logo} alt="Logo" />
+    <header className='header'>
+      <Link to='/'>
+        <img src={Logo} alt='Logo' />
       </Link>
-      <nav className="nav">
-        <ul className="nav__list">
-          <li className="nav__item">
-            <Link to="/" className="nav__link">
+      <nav className='nav'>
+        <ul className='nav__list'>
+          <li className='nav__item'>
+            <Link to='/' className='nav__link'>
               Accueil
             </Link>
           </li>
-          <li className="nav__item">
-            <Link to="/about" className="nav__link">
+          <li className='nav__item'>
+            <Link to='/about' className='nav__link'>
               A propos
             </Link>
           </li>

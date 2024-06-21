@@ -6,8 +6,8 @@ import BannerImage from '../assets/Banner_home.png'
 function Home() {
   return (
     <>
-      <Banner img={BannerImage} text="Chez vous, partout et ailleurs" />
-      <div className="card__container">
+      <Banner img={BannerImage} text='Chez vous, partout et ailleurs' />
+      <div className='card__container'>
         {data.map((logement) => (
           <Card key={logement.id} item={logement} />
         ))}

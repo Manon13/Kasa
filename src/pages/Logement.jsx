@@ -4,7 +4,7 @@ import Carousel from '../components/Carousel/Carousel'
 import Collapse from '../components/Collapse/Collapse'
 import ErrorBoundary from '../components/Error/ErrorBoundary'
 import Tag from '../components/Tag/Tag'
-import Profil from '../components/Profil/Profil'
+import Profile from '../components/Profile/Profile'
 import '../index.sass'
 
 function Logement() {
@@ -34,7 +34,7 @@ function Logement() {
   }
 
   return (
-    <div className="logement-container">
+    <div className='logement-container'>
       <Carousel
         items={logement.pictures.map((url, index) => (
           <img
@@ -44,25 +44,27 @@ function Logement() {
           />
         ))}
       />
-      <div className="logement">
-        <div>
-          <h1 className="logement__title">{logement.title}</h1>
-          <p className="logement__location">{logement.location}</p>
-          <div className="tags-container">
-            {logement.tags.map((tag, index) => (
-              <Tag key={index} tag={tag} />
-            ))}
+      <div className='logement'>
+        <div className='logement__divPrincipale'>
+          <div>
+            <h1 className='logement__title'>{logement.title}</h1>
+            <p className='logement__location'>{logement.location}</p>
+            <div className='tags-container'>
+              {logement.tags.map((tag, index) => (
+                <Tag key={index} tag={tag} />
+              ))}
+            </div>
+          </div>
+          <div className='div-profile'>
+            <Profile host={logement.host} />
           </div>
         </div>
-        <div>
-          <Profil host={logement.host} />
-        </div>
-        <div className="divCollapse">
-          <div className="divItemCollapse">
-            <Collapse item={descriptionItem} className="divCollapse__item" />
+        <div className='divCollapse'>
+          <div className='divItemCollapse'>
+            <Collapse item={descriptionItem} className='divCollapse__item' />
           </div>
-          <div className="divItemCollapse">
-            <Collapse item={equipmentsItem} className="divCollapse__item" />
+          <div className='divItemCollapse'>
+            <Collapse item={equipmentsItem} className='divCollapse__item' />
           </div>
         </div>
       </div>

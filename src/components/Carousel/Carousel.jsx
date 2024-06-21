@@ -23,16 +23,16 @@ const Carousel = ({ items }) => {
   const currentNumber = items.length > 1 ? `${currentIndex + 1}/${items.length}` : '';
 
   return (
-    <div className="carousel">
+    <div className='carousel'>
       {items.length > 1 && (
         <button
           onClick={goToPrevious}
-          className="carousel__button carousel__button--left"
+          className='carousel__button carousel__button--left'
         >
-          <FontAwesomeIcon icon={faChevronLeft} className="faChevronLeft" />
+          <FontAwesomeIcon icon={faChevronLeft} className='faChevronLeft' />
         </button>
       )}
-      <div className="carousel__content">
+      <div className='carousel__content'>
         {items.map((item, index) => (
           <div
             key={index}
@@ -47,13 +47,13 @@ const Carousel = ({ items }) => {
       {items.length > 1 && (
         <button
           onClick={goToNext}
-          className="carousel__button carousel__button--right"
+          className='carousel__button carousel__button--right'
         >
-          <FontAwesomeIcon icon={faChevronRight} className="faChevronRight" />
+          <FontAwesomeIcon icon={faChevronRight} className='faChevronRight' />
         </button>
       )}
       {items.length > 1 && (
-        <div className="carousel__pagination">
+        <div className='carousel__pagination'>
           {currentNumber}
         </div>
       )}
