@@ -10,6 +10,12 @@
   padding: 50px 0px
   border-radius: 25px
 
+  @media screen and (max-width: 375px)
+    width: 375px
+    padding: 0px
+    background-color: #fff
+    gap: 20px
+
   .card
     position: relative
     display: inline-block
@@ -19,11 +25,20 @@
     background-size: cover
     border-radius: 10px
 
+    @media screen and (max-width: 375px)
+      width: 335px
+      height: 225px
+
     img
       width: 340px
       height: 340px
       border-radius: 10px
       object-fit: cover
+
+      @media screen and (max-width: 375px)
+        width: 335px
+        height: 225px
+
 
     &::before
       content: ''

@@ -2,7 +2,13 @@
   display: flex
   justify-content: space-around
   padding-top: 45px
-  // padding-bottom: 50px
+
+  @media screen and (max-width: 375px)
+    padding-top: 20px
+
+  .header__img
+    @media screen and (max-width: 375px)
+      width: 135px
 
 .nav
   .nav__list
@@ -11,8 +17,15 @@
     justify-content: space-around
     list-style-type: none
 
+    @media screen and (max-width: 375px)
+      padding: 0px
+
     .nav__item
       padding-left: 57px
+
+      @media screen and (max-width: 375px)
+        padding-left: 26px
+        text-align: right
 
       .nav__link
         text-decoration: none
@@ -20,6 +33,10 @@
         font-size: 24px
         font-weight: 500
         color: black
+
+        @media screen and (max-width: 375px)
+          font-size: 12px
+          text-transform: uppercase
 
         &:hover
           border-bottom: 2px solid black

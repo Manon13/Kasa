@@ -11,6 +11,12 @@
   border-radius: 25px
   overflow: hidden
 
+  @media screen and (max-width: 375px)
+    width: 335px
+    height: 111px
+    margin: 25px 20px
+    border-radius: 10px
+
   .banner__img
     position: absolute
     top: 0
@@ -19,6 +25,9 @@
     height: 100%
     object-fit: cover
     border-radius: 25px
+
+    @media screen and (max-width: 375px)
+      border-radius: 10px
 
   .banner__text
     position: relative
@@ -31,6 +40,12 @@
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0px 4px 4px rgba(0, 0, 0, 0.25)
     text-align: center
 
+    @media screen and (max-width: 375px)
+      font-size: 24px
+      text-align: left
+      padding-left: 16px
+      // comment separer le texte en 2 lignes seulement sur version mobile??
+
   &::before
     content: ''
     position: absolute
@@ -40,3 +55,6 @@
     background-color: black
     opacity: 0.6
     z-index: 1
+
+    @media screen and (max-width: 375px)
+      border-radius: 10px
