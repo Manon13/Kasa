@@ -8,26 +8,41 @@
   overflow: hidden
   border-radius: 25px
 
+  @media screen and (max-width: 375px)
+    height: 255px
+    margin-top: 27px
+    border-radius: 10px
+
   &__content
     display: flex
     transition: transform 0.5s ease-in-out
     width: 100%
 
+    @media screen and (max-width: 375px)
+      width: 335px
+
   &__item
     min-width: 100%
     box-sizing: border-box
-    display: none
+
+    @media screen and (max-width: 375px)
+      min-width: 335px
 
     &.active
       display: block
 
     img
+      position: absolute
       width: 100%
       height: auto
-      position: absolute
       top: 50%
       left: 0
       transform: translateY(-50%)
+
+    @media screen and (max-width: 375px)
+      img
+        width: 335px
+        height: 255px
 
   &__button
     position: absolute
@@ -50,6 +65,9 @@
       font-size: 20px
       height: 80px
 
+      @media screen and (max-width: 375px)
+        height: 24px
+
 .carousel__pagination
   position: absolute
   bottom: 25px
@@ -60,4 +78,6 @@
   font-size: 18px
   font-weight: 500
 
- 
+  @media screen and (max-width: 375px)
+    font-size: 12px
+    bottom: 10px
