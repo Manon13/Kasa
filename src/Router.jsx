@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import Home from './pages/Home';
@@ -7,7 +7,7 @@ import About from './pages/About';
 import Logement from './pages/Logement';
 import ErrorBoundary from './components/Error/ErrorBoundary';
 
-const router = createBrowserRouter([
+const routes = [
   {
     path: '/',
     element: <App />,
@@ -18,18 +18,12 @@ const router = createBrowserRouter([
       { path: '*', element: <ErrorBoundary /> },
     ],
   },
-]);
+];
 
-function Router() {
-  return (
-    <RouterProvider router={router} />
-  );
-}
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter(routes);
+root.render(
   <React.StrictMode>
-    <Router />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-export default Router;

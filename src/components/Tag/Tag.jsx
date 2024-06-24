@@ -7,8 +7,8 @@ function Tag({ tag }) {
     )
 }
 
-export default Tag
-
 Tag.propTypes = {
     tag: PropTypes.string.isRequired,
 }
+
+export default Tag
