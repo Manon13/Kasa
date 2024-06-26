@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom'
 import data from '../data/logements.json'
 import Carousel from '../components/Carousel/Carousel'
 import Collapse from '../components/Collapse/Collapse'
-import ErrorBoundary from '../components/Error/ErrorBoundary'
+import ErrorPage from './Error';
 import Tag from '../components/Tag/Tag'
 import Profile from '../components/Profile/Profile'
 import Rating from '../components/Rating/Rating'
@@ -13,7 +13,7 @@ function Logement() {
   const logement = data.find((item) => item.id === id)
 
   if (!logement) {
-    return <ErrorBoundary />
+    return <ErrorPage />
   }
 
   const descriptionItem = {
