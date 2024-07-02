@@ -6,7 +6,6 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Logement from './pages/Logement'
 import ErrorPage from './pages/Error'
-// import ErrorBoundary from './components/Error/ErrorBoundary';
 
 const routes = [
   {
