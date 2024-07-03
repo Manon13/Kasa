@@ -7,6 +7,7 @@ import About from './pages/About'
 import Logement from './pages/Logement'
 import ErrorPage from './pages/Error'
 
+/* Configuration des routes pour le router. */
 const routes = [
   {
     path: '/',
@@ -21,8 +22,13 @@ const routes = [
   },
 ]
 
+/* Création du router et rendu de l'application. */
 const root = ReactDOM.createRoot(document.getElementById('root'))
+
+/* Création du BrowserRouter avec les routes configurées. */
 const router = createBrowserRouter(routes)
+
+/* Rendu de l'application React avec StrictMode et RouterProvider */
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />

@@ -8,14 +8,23 @@ import Profile from '../components/Profile/Profile'
 import Rating from '../components/Rating/Rating'
 import '../index.sass'
 
+/**
+ * Composant Logement.
+ * Affiche les détails d'un logement spécifique à partir des données fournies.
+ *
+ * @component
+ * @returns {JSX.Element} Composant React représentant les détails du logement.
+ */
 function Logement() {
   const { id } = useParams()
   const logement = data.find((item) => item.id === id)
 
+  /* Redirige vers la page d'erreur si le logement n'est pas trouvé. */
   if (!logement) {
     return <Navigate to="/Error" replace={true} />;
   }
 
+  /* Définition des items de description et d'équipements pour le Collapse. */
   const descriptionItem = {
     id: `${logement.id}-description`,
     title: 'Description',

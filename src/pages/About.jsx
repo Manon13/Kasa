@@ -4,6 +4,13 @@ import Collapse from '../components/Collapse/Collapse'
 import BannerImage from '../assets/Banner_about.png'
 import '../components/Collapse/Collapse.sass'
 
+/**
+ * Composant About.
+ * Affiche la page "À propos" avec une bannière et une liste de collapsibles.
+ * 
+ * @component
+ * @returns {JSX.Element} Composant React représentant la page "À propos".
+ */
 function About() {
   return (
     <>
