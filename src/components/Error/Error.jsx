@@ -1,6 +1,9 @@
 import './Error.sass'
 
-/* Composant ErrorBoundary qui affiche une page d'erreur 404. */
+/**
+ * Composant ErrorBoundary qui affiche une page d'erreur 404.
+ * @returns {JSX.Element} Composant React représentant la page d'erreur.
+*/
 function ErrorBoundary() {
   return (
     <div className="error">

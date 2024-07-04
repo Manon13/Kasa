@@ -1,7 +1,9 @@
 import Logo_footer from '../../assets/Logo_footer.png';
 import './Footer.sass';
 
-/* Composant Footer qui affiche le logo et le copyrigth de Kasa. */
+/** Composant Footer qui affiche le logo et le copyrigth de Kasa.
+ * @returns {JSX.Element} Composant React représentant le footer.
+*/
 function Footer() {
     const currentYear = new Date().getFullYear();
 

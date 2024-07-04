@@ -8,7 +8,8 @@ Kasa propose plus de 500 annonces de location d'appartements chaque jour. L'obje
 
 ## Prérequis
 Avant de commencer, assurez-vous d'avoir installé les éléments suivants:
-* Node.js
+* Node.js (version 21 ou supérieur)
+* npm (version 10 ou supérieur)
 
 ## Technologies Utilisées
 * React
@@ -25,7 +26,7 @@ Installation de Vite:
 Installation des dépendances: 
 `npm install`
 
-Lancer l'application: 
+Lancer l'application:
 `npm run dev`
 
 ### Étape 2: Installation de React Router 
@@ -42,7 +43,7 @@ Création de fichier .sass pour chaque composant React
 
 ### Étape 4: Installation de Font Awesome
 Installation des paquets nécessaires pour utiliser les îcones Font Awesome: 
-`npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome`
+`npm install @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome`
 
 Exemple d'utilisation d'icones pour Font Awesome: 
 
@@ -71,7 +72,7 @@ function Example() {
 * Gestion de la redirection vers la page d'erreur pour toutes les routes incorrects avec l'errorElement
 
 ### Création de la page de logement
-* Composant Carousel
+* Composant Slideshow
 * Composant Tag
 * Composant Profile
 * Composant Rating

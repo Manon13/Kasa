@@ -8,15 +8,12 @@ import './Card.sass'
  * 
  * @component
  * @param {Object} props - Les propriétés du composant.
- * @param {Object} props.item - Les données de l'élément à afficher dans la carte.
- * @param {string} props.item.id - L'identifiant de l'élément.
- * @param {string} props.item.cover - L'URL de l'image de couverture de l'élément.
- * @param {string} props.item.title - Le titre de l'élément.
+ * @param {Object} props.item - Les données de la carte à afficher.
  * @returns {JSX.Element} Composant React représentant la carte.
  */
 function Card({ item }) {
   return (
-    <Link to={`/logement/${item.id}`}className='card'>
+    <Link to={`/housing/${item.id}`}className='card'>
       <img src={item.cover} alt={item.title} />
       <h2 className='card__title'>{item.title}</h2>
     </Link>

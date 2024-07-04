@@ -8,8 +8,6 @@ import './Profile.sass'
  * @component
  * @param {Object} props - Les propriétés du composant.
  * @param {Object} props.host - Les données de l'hôte à afficher.
- * @param {string} props.host.name - Le nom complet de l'hôte.
- * @param {string} props.host.picture - L'URL de la photo de profil de l'hôte.
  * @returns {JSX.Element} Composant React représentant le profil de l'hôte.
  */
 function Profile({ host }) {

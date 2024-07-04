@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import Home from './pages/Home'
 import About from './pages/About'
-import Logement from './pages/Logement'
+import Housing from './pages/Housing'
 import ErrorPage from './pages/Error'
 
 /* Configuration des routes pour le router. */
@@ -16,7 +16,7 @@ const routes = [
     children: [
       { index: true, element: <Home /> },
       { path: 'about', element: <About /> },
-      { path: 'logement/:id', element: <Logement /> },
+      { path: 'housing/:id', element: <Housing /> },
       { path: '*', element: <ErrorPage /> },
     ],
   },

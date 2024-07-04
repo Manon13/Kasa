@@ -2,7 +2,9 @@ import Logo from '../../assets/Logo.png'
 import { Link } from 'react-router-dom'
 import './Header.sass'
 
-/* Composant Header qui affiche le logo et la navigation */
+/**Composant Header qui affiche le logo et la navigation
+* @returns {JSX.Element} Composant React représentant le header.
+*/
 function Header() {
   return (
     <header className='header'>

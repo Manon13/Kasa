@@ -12,9 +12,6 @@ import './Collapse.sass'
  * @component
  * @param {Object} props - Les props du composant.
  * @param {Object} props.item - Les données de l'élément à afficher.
- * @param {string} props.item.id - L'identifiant de l'élément.
- * @param {string} props.item.title - Le titre de l'élément.
- * @param {string} props.item.description - La description de l'élément.
  * @returns {JSX.Element} Un élément JSX représentant l'élément avec un titre et une description.
  */
 function Collapse({ item }) {
