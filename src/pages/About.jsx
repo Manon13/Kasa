@@ -13,11 +13,11 @@ function About() {
   return (
     <>
       <Banner img={BannerImage} text=' ' />
-      <div className='collapse'>
+      <section className='collapse'>
         {data.map((item) => (
           <Collapse key={item.id} item={item} />
         ))}
-      </div>
+      </section>
     </>
   )
 }

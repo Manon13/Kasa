@@ -9,11 +9,15 @@ import './Error.sass'
  * @returns {JSX.Element} Composant React représentant la page d'erreur.
  */
 function ErrorPage() {
+
+  const errorCode = '404'
+  const errorMessage = 'La page que vous cherchez n\'existe pas.'
+
   return (
     <>
-      <ErrorBoundary />
+      <ErrorBoundary errorCode={errorCode} errorMessage={errorMessage}/>
       <div className='divError__link'>
-        <Link to="/" className="error__link">
+        <Link to="/" className='error__link'>
           Retourner sur la page d&apos;accueil
         </Link>
       </div>

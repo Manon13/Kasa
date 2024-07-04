@@ -13,7 +13,7 @@ function Housing() {
   const housing = data.find((item) => item.id === id)
 
   if (!housing) {
-    return <Navigate to="/Error" replace={true} />;
+    return <Navigate to="/Error" replace={true} />
   }
 
   const descriptionItem = {
@@ -35,7 +35,7 @@ function Housing() {
   }
 
   return (
-    <div className='housing'>
+    <section className='housing'>
       <Slideshow
         items={housing.pictures.map((url, index) => (
           <img
@@ -45,9 +45,9 @@ function Housing() {
           />
         ))}
       />
-      <div className='housing__content'>
+      <section className='housing__content'>
         <div className='housing__main'>
-          <div className='housing__details'>
+          <article className='housing__details'>
             <h1 className='housing__title'>{housing.title}</h1>
             <p className='housing__location'>{housing.location}</p>
             <div className='housing__tags'>
@@ -55,18 +55,18 @@ function Housing() {
                 <Tag key={index} tag={tag} />
               ))}
             </div>
-          </div>
-          <div className='housing__profile'>
+          </article>
+          <aside className='housing__profile'>
             <Profile host={housing.host} />
             <Rating rating={parseInt(housing.rating, 10)} />
-          </div>
+          </aside>
         </div>
         <div className='housing__collapses'>
           <Collapse item={descriptionItem} className='collapse__item' />
           <Collapse item={equipmentsItem} className='collapse__item' />
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   )
 }
 

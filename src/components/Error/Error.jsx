@@ -1,18 +1,27 @@
+import PropTypes from 'prop-types'
 import './Error.sass'
 
 /**
- * Composant ErrorBoundary qui affiche une page d'erreur 404.
+ * Composant ErrorBoundary qui affiche une page d'erreur avec un message personnalisé.
+ * @param {Object} props Les propriétés du composant.
+
  * @returns {JSX.Element} Composant React représentant la page d'erreur.
-*/
-function ErrorBoundary() {
+ */
+function ErrorBoundary({ errorCode, errorMessage }) {
+
   return (
     <div className="error">
-      <h1 className="error__title">404</h1>
+      <h1 className="error__title">{errorCode}</h1>
       <p className="error__p">
-        Oups! La page que vous demandez n&apos;existe pas.
+        {errorMessage}
       </p>
     </div>
   )
+}
+
+ErrorBoundary.propTypes = {
+  errorCode: PropTypes.string.isRequired,
+  errorMessage: PropTypes.string.isRequired,
 }
 
 export default ErrorBoundary

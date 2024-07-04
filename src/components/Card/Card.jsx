@@ -13,7 +13,7 @@ import './Card.sass'
  */
 function Card({ item }) {
   return (
-    <Link to={`/housing/${item.id}`}className='card'>
+    <Link to={`/housing/${item.id}`} className='card'>
       <img src={item.cover} alt={item.title} />
       <h2 className='card__title'>{item.title}</h2>
     </Link>

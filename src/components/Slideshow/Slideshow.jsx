@@ -57,13 +57,13 @@ const Slideshow = ({ items }) => {
       {items.length > 1 && (
         <button
           onClick={goToNext}
-          className="slideshow__button slideshow__button--right"
+          className='slideshow__button slideshow__button--right'
         >
-          <FontAwesomeIcon icon={faChevronRight} className="faChevronRight" />
+          <FontAwesomeIcon icon={faChevronRight} className='faChevronRight' />
         </button>
       )}
       {items.length > 1 && (
-        <div className="slideshow__pagination">{currentNumber}</div>
+        <div className='slideshow__pagination'>{currentNumber}</div>
       )}
     </div>
   )

@@ -13,11 +13,11 @@ function Home() {
   return (
     <>
       <Banner img={BannerImage} text='Chez vous, partout et ailleurs' />
-      <div className='card__container'>
+      <section className='card__container'>
         {data.map((housing) => (
           <Card key={housing.id} item={housing} />
         ))}
-      </div>
+      </section>
     </>
   )
 }
