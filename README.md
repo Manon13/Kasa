@@ -80,7 +80,6 @@ function Example() {
 
 ## Structure du projet
 * `src/`: Contient tous les fichiers sources.
-    * `assets`: Contients toutes les images
+    * `assets`: Contient un dossier pour les images et un dossier pour la data nécessaire au projet.
     * `components`: Contient les dossiers des composants React et leurs fichiers Sass associés.
-    * `data`: Contient toute la data nécessaire au projet.
     * `pages`: Contient toutes les pages de l'application.
