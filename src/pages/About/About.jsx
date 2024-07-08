@@ -1,4 +1,4 @@
-import data from '../../data/about.json'
+import data from '../../assets/data/about.json'
 import Banner from '../../components/Banner/Banner'
 import Collapse from '../../components/Collapse/Collapse'
 import BannerImage from '../../assets/images/Banner_about.png'

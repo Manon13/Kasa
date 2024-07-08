@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import data from '../../data/housing.json'
+import data from '../../assets/data/housing.json'
 import Slideshow from '../../components/Slideshow/Slideshow'
 import Collapse from '../../components/Collapse/Collapse'
 import { Navigate } from 'react-router-dom'
