@@ -35,7 +35,7 @@ function Housing() {
   }
 
   return (
-    <section className='housing'>
+    <section className="housing">
       <Slideshow
         items={housing.pictures.map((url, index) => (
           <img
@@ -45,25 +45,29 @@ function Housing() {
           />
         ))}
       />
-      <section className='housing__content'>
-        <div className='housing__main'>
-          <article className='housing__details'>
-            <h1 className='housing__title'>{housing.title}</h1>
-            <p className='housing__location'>{housing.location}</p>
-            <div className='housing__tags'>
+      <section className="housing__content">
+        <div className="housing__main">
+          <article className="housing__details">
+            <h1 className="housing__title">{housing.title}</h1>
+            <p className="housing__location">{housing.location}</p>
+            <div className="housing__tags">
               {housing.tags.map((tag, index) => (
                 <Tag key={index} tag={tag} />
               ))}
             </div>
           </article>
-          <aside className='housing__profile'>
+          <aside className="housing__profile">
             <Profile host={housing.host} />
             <Rating rating={parseInt(housing.rating, 10)} />
           </aside>
         </div>
-        <div className='housing__collapses'>
-          <Collapse item={descriptionItem} className='collapse__item' />
-          <Collapse item={equipmentsItem} className='collapse__item' />
+        <div className="housing__collapses">
+          <div className="housing__collapse">
+            <Collapse item={descriptionItem} />
+          </div>
+          <div className="housing__collapse">
+            <Collapse item={equipmentsItem} />
+          </div>
         </div>
       </section>
     </section>

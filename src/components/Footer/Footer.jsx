@@ -1,4 +1,4 @@
-import Logo_footer from '../../assets/Logo_footer.png';
+import Logo_footer from '../../assets/images/Logo_footer.png';
 import './Footer.sass';
 
 /** Composant Footer qui affiche le logo et le copyrigth de Kasa.
