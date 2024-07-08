@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.sass'
+
 .banner
   width: 1240px
   height: 223px
@@ -32,11 +34,9 @@
   &__text
     position: relative
     z-index: 2
-    font-family: 'Montserrat', sans-serif
-    font-style: normal
+    @include main-font-bold
     font-size: 48px
-    font-weight: 700
-    color: #FFF
+    color: $white
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0px 4px 4px rgba(0, 0, 0, 0.25)
     text-align: center
 
@@ -52,7 +52,7 @@
     border-radius: 25px
     width: 100%
     height: 100%
-    background-color: black
+    background-color: $black
     opacity: 0.6
     z-index: 1
 

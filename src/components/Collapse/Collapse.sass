@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.sass'
+
 .collapse__item
   border-radius: 5px
   margin-bottom: 30px
@@ -5,18 +7,17 @@
   @media screen and (max-width: 375px)
     width: 335px
     margin-bottom: 20px
-    
+
 .collapse__title
   display: flex
   justify-content: space-between
   align-items: center
-  font-family: 'Montserrat', sans-serif
+  @include main-font-bold
   font-size: 24px
-  font-weight: 700
   margin: 0
   padding: 10px 20px 10px 15px
-  color: #fff
-  background-color: #FF6060
+  color: $white
+  background-color: $primary-red
   border-radius: 5px
 
   @media screen and (max-width: 375px)
@@ -28,11 +29,11 @@
 
 .collapse__description
   max-height: 0
-  font-family: 'Montserrat', sans-serif
+  @include main-font-medium
   font-size: 18px
   overflow: hidden
   transition: max-height 0.6s ease-out, padding 0.6s ease-out
-  background-color: #fbfbfb
+  background-color: $light-grey
   border-radius: 5px
   padding: 0 10px
 

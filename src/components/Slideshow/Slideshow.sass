@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.sass'
+
 .slideshow
   position: relative
   width: 100%
@@ -73,10 +75,9 @@
   bottom: 25px
   left: 50%
   transform: translateX(-50%)
-  color: #fff
-  font-family: 'Montserrat', sans-serif
+  color: $white
+  @include main-font-medium
   font-size: 18px
-  font-weight: 500
 
   @media screen and (max-width: 375px)
     font-size: 12px

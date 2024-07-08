@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.sass'
+
 .header
   display: flex
   justify-content: space-around
@@ -29,14 +31,13 @@
 
       .nav__link
         text-decoration: none
-        font-family: "Montserrat", sans-serif
+        @include main-font-medium
         font-size: 24px
-        font-weight: 500
-        color: black
+        color: $black
 
         @media screen and (max-width: 375px)
           font-size: 12px
           text-transform: uppercase
 
         &:hover
-          border-bottom: 2px solid black
+          border-bottom: 2px solid $black

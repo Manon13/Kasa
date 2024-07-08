@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.sass'
+  
 .housing
   width: 1240px
   margin: auto
@@ -22,10 +24,9 @@
       max-width: 335px
 
   &__title
-    font-family: 'Montserrat', sans-serif
+    @include main-font-medium
     font-size: 36px
-    font-weight: 500
-    color: #FF6060
+    color: $primary-red
     margin: 30px 0 5px 0
 
     @media screen and (max-width: 375px)
@@ -34,9 +35,8 @@
       margin: 15px 0 5px 0
 
   &__location
-    font-family: 'Montserrat', sans-serif
+    @include main-font-medium
     font-size: 18px
-    font-weight: 500
     color: #000
     margin: 0 0 20px 0
 

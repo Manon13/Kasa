@@ -1,13 +1,14 @@
+@import '../../assets/styles/variables.sass'
+
 .error
   display: flex
   flex-direction: column
   align-items: center
 
   &__title
-    font-family: 'Montserrat', sans-serif
+    @include main-font-bold
     font-size: 288px
-    font-weight: 700
-    color: #ff6060
+    color: $primary-red
     margin: 100px 0 100px 0
 
     @media screen and (max-width: 375px)
@@ -15,9 +16,9 @@
       margin: 50px 0 50px 0
 
   &__p
-    font-family: 'Montserrat'
+    @include main-font-medium
     font-size: 36px
-    color: #ff6060
+    color: $primary-red
     margin: 0 0 100px 0
 
     @media screen and (max-width: 375px)

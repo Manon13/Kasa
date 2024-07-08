@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.sass'
+
 .profile
   display: flex
   align-items: center
@@ -14,11 +16,9 @@
     height: 32px
 
 .profile__name
-  font-family: 'Montserrat'
+  @include main-font-medium
   font-size: 18px
-  font-style: normal
-  font-weight: 500
-  color: #ff6060
+  color: $primary-red
   text-align: right
   white-space: nowrap
 
