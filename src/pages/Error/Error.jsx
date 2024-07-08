@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import ErrorBoundary from '../components/Error/Error'
+import ErrorBoundary from '../../components/Error/Error'
 import './Error.sass'
 
 /**

@@ -1,7 +1,8 @@
-import data from '../data/housing.json'
-import Banner from '../components/Banner/Banner'
-import Card from '../components/Card/Card'
-import BannerImage from '../assets/images/Banner_home.png'
+import data from '../../data/housing.json'
+import Banner from '../../components/Banner/Banner'
+import Card from '../../components/Card/Card'
+import BannerImage from '../../assets/images/Banner_home.png'
+import './Home.sass'
 
 /**
  * Composant Home.

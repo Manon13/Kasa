@@ -1,11 +1,11 @@
 import { useParams } from 'react-router-dom'
-import data from '../data/housing.json'
-import Slideshow from '../components/Slideshow/Slideshow'
-import Collapse from '../components/Collapse/Collapse'
+import data from '../../data/housing.json'
+import Slideshow from '../../components/Slideshow/Slideshow'
+import Collapse from '../../components/Collapse/Collapse'
 import { Navigate } from 'react-router-dom'
-import Tag from '../components/Tag/Tag'
-import Profile from '../components/Profile/Profile'
-import Rating from '../components/Rating/Rating'
+import Tag from '../../components/Tag/Tag'
+import Profile from '../../components/Profile/Profile'
+import Rating from '../../components/Rating/Rating'
 import './Housing.sass'
 
 function Housing() {
